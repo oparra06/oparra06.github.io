@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style>
+		p{font-size: 1.3em;
+			font-family: 'Roboto', sans-serif;
+
+		}
+		h1{
+			font-family: 'Roboto Slab', serif;
+		}
+      #scrolly {
+        position: relative;
+        padding: 1rem;
+      }
+
+      .scrolly-overlay {
+        position: relative;
+        padding: 0;
+        max-width: 35rem;
+        margin: 0 auto;
+      }
+
+      .sticky-thing {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        z-index: 0;
+        top: 0;
+        height: 100vh;
+        /* Center everything inside */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .step {
+        margin: 0 auto 2rem auto;
+        margin-bottom: 40rem;
+        background-color: #eee;
+        background-color: #fff;
+        color: black;
+      }
+
+      .step p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.25rem;
+      }
+
+      .hidden { visibility: hidden; }
+
+      .centrado{width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+      /* When it's less than 700 pixels wide, do normal scrollytelling */
+      @media only screen and (min-width: 700px) {
+        #scrolly.side-by-side {
+          display: flex;
+        }
+
+        #scrolly.side-by-side > div {
+          flex-basis: 0;
+          flex-grow: 1;
+          flex-shrink: 1;
+          padding: 0.75em;
+        }
+
+        #scrolly.side-by-side .scrolly-overlay {
+          margin-top: 70vh;
+          order: 0;
+          /* Change these to adjust sizing options */
+          min-width: 15rem;
+          max-width: 20rem;
+        }
+
+        #scrolly.side-by-side .sticky-thing {
+          order: 1;
+          flex-grow: 2;
+        }
+      }
+    </style>
+	<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.0.4/scrollama.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+	
+  </head>
+
+  <body>
+	<div id="titulo" style="position:absolute; top:75%; left:20%; z-index: 100;"><h1 style="font-size:3em; color:#fff">History camouflaged in the streets of Harlem</h1></div>
+	<div id="container" style="position: absolute; top:0; left:0; width:100%">
+	<div id="foto_gr" style="width:100%">
+		<img src="multi.png" width="100%">
+
+	</div>
+	<div class="centrado">
+		<p>I have been fortunate enough to visit New York several times, both as a tourist and as a student. Always with my eyes on the great skyscrapers, museums and famous urban spaces, world iconic, I had not had the opportunity to look at the enormous cultural richness and history of other less famous areas of Manhattan such as the Harlem neighborhood.</p>
+
+		<p>The cliché that spread to the world in the 1970s and 1980s through movies and television series remained in my head: an area that associated a majority of the African-American population living in harsh conditions of poverty, insecurity and consumption of drugs.</p>
+		
+		<p>I think in general, the way that area was presented, once again victimized the people of Harlem, stigmatized and affected by centuries of slavery and segregation.</p>
+		
+		<p>Living in this place was quite a surprise for me. In the middle of the streets there are small monuments that tell the story of this area of ​​the city, from the time of independence to the fight for civil rights that is not over yet. This is a short tour of the streets of Harlem and its monuments, camouflaged in the middle of the streets of a city that never stops moving.</p>
+
+    
+	</div>
+	<br>
+	<br><br>
+      <section id="scrolly">
+        <div class="sticky-thing">
+          <div class="ai2html-container">
+
+<!-- ai2html goes below this line -->
+
+<style media="screen,print">
+	#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-box ,
+	#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-box p {
+		margin:0;
+	}
+	#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-box .g-aiPointText p { white-space: nowrap; }
+	#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1 {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1 p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:23px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:19px;
+		text-align:left;
+		color:rgb(51,51,51);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1 .g-pstyle0 {
+		height:23px;
+	}
+	#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1 .g-pstyle1 {
+		line-height:16px;
+		height:16px;
+		font-size:13px;
+		color:rgb(0,255,0);
+	}
+	#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1 .g-pstyle2 {
+		line-height:16px;
+		height:16px;
+		font-size:13px;
+		color:rgb(144,139,120);
+	}
+	#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1 .g-pstyle3 {
+		line-height:16px;
+		height:16px;
+		font-size:13px;
+		color:rgb(0,0,0);
+	}
+	#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1 .g-pstyle4 {
+		line-height:19px;
+		height:19px;
+		letter-spacing:0.055em;
+		font-size:16px;
+		color:rgb(186,186,186);
+	}
+	#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1 .g-pstyle5 {
+		line-height:16px;
+		height:16px;
+		font-size:13px;
+		color:rgb(255,255,255);
+	}
+	#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1 .g-pstyle6 {
+		line-height:18px;
+		height:18px;
+		font-size:15px;
+		color:rgb(0,0,0);
+	}
+	#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1 .g-pstyle7 {
+		line-height:18px;
+		height:18px;
+		letter-spacing:-0.243em;
+		font-size:15px;
+		color:rgb(0,0,0);
+	}
+	#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1 .g-pstyle8 {
+		line-height:19px;
+		height:19px;
+		font-size:16px;
+		color:rgb(0,0,0);
+	}
+
+</style>
+
+<div id="g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-box" class="ai2html">
+
+	<!-- Artboard: Mesa_de_trabajo_1 -->
+	<div id="g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1" class="g-artboard" style="max-width: 900px;max-height: 836px" data-aspect-ratio="1.076" data-min-width="0">
+<div style="padding: 0 0 92.8981% 0;"></div>
+		<img id="g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1-img" class="g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1-img g-aiImg" alt="" src="n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1.png"/>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg class="g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1-interactive-img g-aiImg" version="1.2" baseProfile="tiny" id="g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1-interactive-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 900 836.083" xml:space="preserve">
+<g>
+	<path id="selection" data-name="selection" fill="#00DCA6" fill-opacity="0.2" stroke="#4DB58D" stroke-miterlimit="10" d="M406.7,687.9L308,639.7
+		l-46.3-26.2l19.5-33.9l-4.9-41.5l48.7-72.2l-35.3-19.7l11-23l-35.3-21.9l18.3-29.5l-36.6-52.5l35.3-55.8l2.4-13.1l-17.1-15.3
+		l32.9-54.7l12.2-10.9l18.3,2.2l41.4-56.9L395.6,70L408,53.7l213.2,111.5v94l3.7,84.2l-69.4,115.9l-45.1,75.4l-3.7,4.4l18.3,12
+		l-23.1,41.5l-24.4-9.8l-28,43.7L426.2,666L406.7,687.9z"/>
+	<g id="cream" data-name="cream">
+		<path id="cream2" data-name="cream2" fill="#FFE59C" d="M295.5,564c0,6.7-6,12.1-13.5,12.1s-13.5-5.4-13.5-12.1s6-12.1,13.5-12.1
+			S295.5,557.3,295.5,564z"/>
+		<path id="cream1" data-name="cream1" fill="#FFE59C" d="M352.5,445.6c0,6.7-6,12.1-13.5,12.1s-13.5-5.4-13.5-12.1s6-12.1,13.5-12.1
+			S352.5,438.9,352.5,445.6z"/>
+	</g>
+	<g id="blue" data-name="blue">
+		<path id="blue3" data-name="blue3" fill="#1D81A2" d="M298.5,627.3c0,6.7-6,12.1-13.5,12.1s-13.5-5.4-13.5-12.1c0-6.7,6-12.1,13.5-12.1
+			S298.5,620.6,298.5,627.3z"/>
+		<path id="blue2" data-name="blue2" fill="#1D81A2" d="M375,498c0,6.7-6,12.1-13.5,12.1S348,504.7,348,498s6-12.1,13.5-12.1S375,491.4,375,498z"/>
+	</g>
+	<g id="red" data-name="red">
+		<path id="red2" data-name="red2" fill="#C71E1D" d="M300,576.1c0,6.7-6,12.1-13.5,12.1s-13.5-5.4-13.5-12.1s6-12.1,13.5-12.1
+			S300,569.4,300,576.1z"/>
+		<path id="red1" data-name="red1" fill="#C71E1D" d="M445.5,262.5c0,6.7-6,12.1-13.5,12.1s-13.5-5.4-13.5-12.1c0-6.7,6-12.1,13.5-12.1
+			S445.5,255.8,445.5,262.5z"/>
+	</g>
+	<g id="orange" data-name="orange">
+		<path id="orange5" data-name="orange5" fill="#FA8C00" d="M472.5,379.6c0,6.7-6,12.1-13.5,12.1s-13.5-5.4-13.5-12.1s6-12.1,13.5-12.1
+			S472.5,372.9,472.5,379.6z"/>
+		<path id="orange4" data-name="orange4" fill="#FA8C00" d="M417,126.5c0,6.7-6,12.1-13.5,12.1s-13.5-5.4-13.5-12.1c0-6.7,6-12.1,13.5-12.1
+			S417,119.8,417,126.5z"/>
+		<path id="orange3" data-name="orange3" fill="#FA8C00" d="M397.5,469.8c0,6.7-6,12.1-13.5,12.1s-13.5-5.4-13.5-12.1s6-12.1,13.5-12.1
+			S397.5,463.1,397.5,469.8z"/>
+		<path id="orange2" data-name="orange2" fill="#FA8C00" d="M633,344.6c0,6.7-6,12.1-13.5,12.1s-13.5-5.4-13.5-12.1s6-12.1,13.5-12.1
+			S633,337.9,633,344.6z"/>
+		<path id="orange1" data-name="orange1" fill="#FA8C00" d="M444,484.6c0,6.7-6,12.1-13.5,12.1s-13.5-5.4-13.5-12.1s6-12.1,13.5-12.1
+			S444,477.9,444,484.6z"/>
+	</g>
+</g>
+<style>
+#g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1-interactive-img rect, #g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1-interactive-img circle, #g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1-interactive-img path, #g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1-interactive-img line, #g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1-interactive-img polyline, #g-n7mjL-the-history-in-the-streets-of-harlem-rgb-_1_-Mesa_de_trabajo_1-interactive-img polygon { vector-effect: non-scaling-stroke; }
+</style>
+</svg>
+
+		<div id="orangetext1" class="g-interactive g-aiAbs g-aiPointText" style="top:18.915%;margin-top:-13.1px;left:32.9792%;width:237px;">
+			<p class="g-pstyle0">Ralph Ellison Memorial</p>
+		</div>
+		<div id="g-ai0-2" class="g-exportSvg g-aiAbs g-aiPointText" style="top:22.1821%;margin-top:-9.5px;left:4.8901%;width:117px;">
+			<p class="g-pstyle1">EDGEWATER</p>
+		</div>
+		<div id="g-ai0-3" class="g-exportSvg g-aiAbs g-aiPointText" style="top:22.1821%;margin-top:-9.5px;left:4.8901%;width:117px;">
+			<p class="g-pstyle2">EDGEWATER</p>
+		</div>
+		<div id="g-ai0-4" class="g-exportSvg g-aiAbs g-aiPointText" style="top:22.1821%;margin-top:-9.5px;left:4.8901%;width:117px;">
+			<p class="g-pstyle3">EDGEWATER</p>
+		</div>
+		<div id="redtext1" class="g-interactive g-aiAbs g-aiPointText" style="top:35.1814%;margin-top:-13.1px;left:28.6884%;width:369px;">
+			<p class="g-pstyle0">Hamilton Grange National Monument</p>
+		</div>
+		<div id="orangetext2" class="g-interactive g-aiAbs g-aiPointText" style="top:36.989%;margin-top:-13.1px;left:51.1356%;width:338px;">
+			<p class="g-pstyle0">369th Infantry Regiment Memorial</p>
+		</div>
+		<div id="orangetext3" class="g-interactive g-aiAbs g-aiPointText" style="top:49.1752%;margin-top:-13.1px;left:39.8523%;width:224px;">
+			<p class="g-pstyle0">Harlem Walk of Fame</p>
+		</div>
+		<div id="creamtext1" class="g-interactive g-aiAbs g-aiPointText" style="top:57.0692%;margin-top:-13.1px;left:28.134%;width:196px;">
+			<p class="g-pstyle0">Roosevelt Triangle</p>
+		</div>
+		<div id="orangetext4" class="g-interactive g-aiAbs g-aiPointText" style="top:56.0593%;margin-top:-13.1px;left:25.545%;width:167px;">
+			<p class="g-pstyle0">Spirit of Harlem</p>
+		</div>
+		<div id="orangetext5" class="g-interactive g-aiAbs g-aiPointText" style="top:57.7338%;margin-top:-13.1px;left:50.5763%;width:349px;">
+			<p class="g-pstyle0">Monument to Adam Clayton Powell</p>
+		</div>
+		<div id="bluetext1" class="g-interactive g-aiAbs g-aiPointText" style="top:63.4082%;margin-top:-13.1px;left:26.9142%;width:259px;">
+			<p class="g-pstyle0">Harriet Tubman Memorial</p>
+		</div>
+		<div id="creamtext2" class="g-interactive g-aiAbs g-aiPointText" style="top:71.3022%;margin-top:-13.1px;left:12.665%;width:370px;">
+			<p class="g-pstyle0">Seligman Fountain - "Bear and Faun"</p>
+		</div>
+		<div id="redtext2" class="g-interactive g-aiAbs g-aiPointText" style="top:72.7375%;margin-top:-13.1px;left:12.404%;width:370px;">
+			<p class="g-pstyle0">Lafayette and Washington Monument</p>
+		</div>
+		<div id="g-ai0-14" class="g-exportSvg g-aiAbs g-aiPointText" style="top:77.2714%;margin-top:-11.1px;left:79.3573%;width:106px;">
+			<p class="g-pstyle4">New York</p>
+		</div>
+		<div id="bluetext2" class="g-interactive g-aiAbs g-aiPointText" style="top:78.8373%;margin-top:-13.1px;left:8.4774%;width:445px;">
+			<p class="g-pstyle0">Frederick Douglass Sculpture and Water Wall</p>
+		</div>
+		<div id="g-ai0-16" class="g-exportSvg g-aiAbs g-aiPointText" style="top:82.2241%;margin-top:-9.5px;left:85.3086%;width:101px;">
+			<p class="g-pstyle5">RANDALLS</p>
+		</div>
+		<div id="g-ai0-17" class="g-exportSvg g-aiAbs g-aiPointText" style="top:82.2241%;margin-top:-9.5px;left:85.3086%;width:101px;">
+			<p class="g-pstyle2">RANDALLS</p>
+		</div>
+		<div id="g-ai0-18" class="g-exportSvg g-aiAbs g-aiPointText" style="top:82.2241%;margin-top:-9.5px;left:85.3086%;width:101px;">
+			<p class="g-pstyle3">RANDALLS</p>
+		</div>
+		<div id="g-ai0-19" class="g-exportSvg g-aiAbs g-aiPointText" style="top:84.2574%;margin-top:-9.5px;left:86.5709%;width:76px;">
+			<p class="g-pstyle5">ISLAND</p>
+		</div>
+		<div id="g-ai0-20" class="g-exportSvg g-aiAbs g-aiPointText" style="top:84.2574%;margin-top:-9.5px;left:86.5709%;width:76px;">
+			<p class="g-pstyle2">ISLAND</p>
+		</div>
+		<div id="g-ai0-21" class="g-exportSvg g-aiAbs g-aiPointText" style="top:84.2574%;margin-top:-9.5px;left:86.5709%;width:76px;">
+			<p class="g-pstyle3">ISLAND</p>
+		</div>
+		<div id="g-ai0-22" class="g-exportSvg g-aiAbs g-aiPointText" style="top:89.8543%;margin-top:-10.3px;left:74.5052%;width:39px;">
+			<p class="g-pstyle6">&copy; </p>
+		</div>
+		<div id="g-ai0-23" class="g-exportSvg g-aiAbs g-aiPointText" style="top:89.8543%;margin-top:-10.3px;left:76.3993%;width:138px;">
+			<p class="g-pstyle6">OpenStreetMap</p>
+		</div>
+		<div id="g-ai0-24" class="g-exportSvg g-aiAbs g-aiPointText" style="top:89.8543%;margin-top:-10.3px;left:76.3995%;width:22px;">
+			<p class="g-pstyle7">​</p>
+		</div>
+		<div id="g-ai0-25" class="g-exportSvg g-aiAbs g-aiPointText" style="top:89.8543%;margin-top:-10.3px;left:89.1289%;width:113px;">
+			<p class="g-pstyle6"> contributors</p>
+		</div>
+		<div id="g-ai0-26" class="g-exportSvg g-aiAbs g-aiPointText" style="top:89.8543%;margin-top:-10.3px;left:89.1289%;width:22px;">
+			<p class="g-pstyle7">​</p>
+		</div>
+		<div id="g-ai0-27" class="g-exportSvg g-aiAbs g-aiPointText" style="top:94.9362%;margin-top:-20.7px;left:62.0469%;width:136px;">
+			<p class="g-pstyle8">Independence</p>
+			<p class="g-pstyle8">monuments</p>
+		</div>
+		<div id="g-ai0-28" class="g-exportSvg g-aiAbs g-aiPointText" style="top:93.777%;margin-top:-11.1px;left:30.7948%;width:241px;">
+			<p class="g-pstyle8">Pride of Harlem culture and</p>
+		</div>
+		<div id="g-ai0-29" class="g-exportSvg g-aiAbs g-aiPointText" style="top:93.7769%;margin-top:-11.1px;left:7.108%;width:173px;">
+			<p class="g-pstyle8">Abolitionist leaders</p>
+		</div>
+		<div id="g-ai0-30" class="g-exportSvg g-aiAbs g-aiPointText" style="top:94.973%;margin-top:-11.1px;left:81.6334%;width:165px;">
+			<p class="g-pstyle8">Other works of art</p>
+		</div>
+		<div id="g-ai0-31" class="g-exportSvg g-aiAbs g-aiPointText" style="top:96.0495%;margin-top:-11.1px;left:7.1111%;width:116px;">
+			<p class="g-pstyle8">monuments</p>
+		</div>
+		<div id="g-ai0-32" class="g-exportSvg g-aiAbs g-aiPointText" style="top:96.0495%;margin-top:-11.1px;left:30.7948%;width:175px;">
+			<p class="g-pstyle8">people monuments</p>
+		</div>
+	</div>
+
+<!-- Custom HTML -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+<style>
+.hidden { visibility: hidden; }
+</style>
+
+</div>
+
+<script src="https://unpkg.com/d3@7.6.1/dist/d3.min.js"></script>
+<style>
+.hidden {visibility: hidden;}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+<!-- ai2html goes above this line -->
+
+          </div>
+        </div>
+
+        <div class="scrolly-overlay">
+          <div class="step" id="step-zero">
+            <p>Camouflaged in the middle of the streets of the Harlem neighborhood, several monuments are part of the landscape unnoticed by the eyes of residents of the area and some tourists. The works of art displayed on the street show various aspects of the history of this area of Manhattan.</p>
+          </div>
+          <div class="step" id="step-one">
+            <p>The neighborhood of Harlem occupies much of the northern part of the island of Manhattan that is bordered by the Harlem River on the east to the Hudson River on the west. On the north it extends from 155th Street to a line that weaves south through 96th Street, the south side of Central Park, the east side of Morningside Park, La Salle Street and 125th Street..</p>
+          </div>
+          <div class="step" id="step-two">
+			<img style="float:left" src="https://live.staticflickr.com/65535/52238422263_9d88ba0d5d.jpg" width="200">
+            <p>Far from the crowds of tourists that fill the streets amidst the skyscrapers, monuments appear that recall the role of this area of the city in American independence. On the one hand, a statue in the middle of an abandoned property recalls the life of Alexander Hamilton in his house in Harlem. On the other side, a statue of Washington and Lafayette commemorate the Battle of Harlem Heights.</p>
+            
+		</div>
+          <div class="step" id="step-three">
+            <img style="float:left" src="https://live.staticflickr.com/65535/52238698849_766f5104a3_w.jpg" width="200">
+			
+            <p>The great migration of African Americans from rural areas to large cities in the early 20th century made Harlem an area with a predominantly black population. The community has monuments to remember 19th-century abolitionist leaders who were not necessarily associated with that area. These statues are full of symbolism representing the pain of the slaves who fled from the south to New York.</p>
+          </div>
+		  <div class="step" id="step-four">
+			<img style="float:left" src="https://live.staticflickr.com/65535/52238903035_6be9c91f46.jpg" width="200">
+			
+
+			
+            <p>With the massive arrival of African-Americans, Harlem experienced a cultural boom, especially after the 1940s, related to music and anti-segregation movements. In the area, most of the monuments show the pride of the artistic expressions and of the representative characters of the community: writers, musicians, politicians and still segregated battalions that fought in the First World War.</p>
+          </div>
+		  <div class="step" id="step-five">
+            <img style="float:left" src="https://live.staticflickr.com/65535/52237427582_1817f7d18c.jpg" width="200">
+            <p>In the area, there are two monuments that do not have any direct link with the historical events that occurred in Harlem, nor with the demands of the African-American population. It is the monument to President Franklin D. Roosevelt and a beautiful work of art by an American artist, a student of Auguste Rodin, which decorates the entrance to Morningside Park.</p>
+          </div>
+        </div>
+      </section>
+	  <br>
+	  <br>
+	  <br>
+
+	  <div class="centrado">
+		<p>As in other cities in the world, these small monuments, far from the big tourist attractions, are easily lost from the eyes of tourists. It even seems that oblivion tried to erase its meaning and its memories. For example, several of these monuments are located in small triangular squares in the middle of the streets. They are not urban spaces that invite pedestrians to visit them and learn what they represent.</p>
+
+		<p>This is the case of the Roosevelt monument, a piece of modern art in the middle of several streets. It is not easy for a passerby to understand what this work of art represents or the history behind the space it occupies in that part of the city.</p>
+		<img src="https://live.staticflickr.com/65535/52238415316_bbb1d77afc_b.jpg" width="100%">
+		<p>This abstract artwork is a memorial to former President Franklin D. Roosevelt. Before World War II, a World War I battle tank was located on the site. The monument was installed in 1971.</p>
+		<p>Another case is that of the memorial to the 369th Infantry Regiment. This obelisk was built in France, as a replica of a larger obelisk, which remains in that country to honor the 369th infantry regiment that fought in the First World War. At that time the country was segregated and this regiment, with the majority of soldiers from Harlem, was made up of African Americans. The monument remains almost 'hidden' in a small triangular square, next to a little traveled avenue, practically in oblivion.</p>
+		<p>In contrast, other monuments, located in the most commercial area of Harlem, have greater visibility in the urban environment. This is the case of the monument to the Harlem politician Adam Clayton, the first African American to reach Congress representing New York where they remained from 1945 to 1971 and the mural El espiritu de Harlem, a mosaic, tribute to the artists who were born and raised in Harlem. It has been in this place since 2005.</p>
+		<img src="https://live.staticflickr.com/65535/52238904155_38b1f5538f_c.jpg" width="100%">	
+	</div>
+    <script>
+      
+      /* Scrollytelling code goes under here */
+	  d3.select("#selection").classed('hidden',true)	
+      d3.select("#orangetext1").classed('hidden',true)
+	  d3.select("#orangetext2").classed('hidden',true)
+	  d3.select("#orangetext3").classed('hidden',true)
+	  d3.select("#orangetext4").classed('hidden',true)
+	  d3.select("#orangetext5").classed('hidden',true)
+	  d3.select("#orange").classed('hidden',true)
+	  d3.select("#redtext1").classed('hidden',true)
+	  d3.select("#redtext2").classed('hidden',true)
+	  d3.select("#red").classed('hidden',true)
+	  d3.select("#blue").classed('hidden',true)
+	  d3.select("#bluetext1").classed('hidden',true)
+	  d3.select("#bluetext2").classed('hidden',true)
+	  d3.select("#cream").classed('hidden',true)
+	  d3.select("#creamtext1").classed('hidden',true)
+	  d3.select("#creamtext2").classed('hidden',true)
+	  
+	
+
+	  d3.select("#step-zero").on('stepin', function(e){
+		d3.select("#selection").classed('hidden',true)	
+      	d3.select("#orangetext1").classed('hidden',true)
+	  	d3.select("#orangetext2").classed('hidden',true)
+	  	d3.select("#orangetext3").classed('hidden',true)
+	  	d3.select("#orangetext4").classed('hidden',true)
+	  	d3.select("#orangetext5").classed('hidden',true)
+	  	d3.select("#orange").classed('hidden',true)
+	  	d3.select("#redtext1").classed('hidden',true)
+	  	d3.select("#redtext2").classed('hidden',true)
+	  	d3.select("#red").classed('hidden',true)
+	  	d3.select("#blue").classed('hidden',true)
+	  	d3.select("#bluetext1").classed('hidden',true)
+	  	d3.select("#bluetext2").classed('hidden',true)
+	  	d3.select("#cream").classed('hidden',true)
+	  	d3.select("#creamtext1").classed('hidden',true)
+	  	d3.select("#creamtext2").classed('hidden',true)
+		
+	  })
+	  
+	  d3.select("#step-one").on('stepin', function(e){
+		d3.select("#selection").classed('hidden',false)
+		d3.select("#redtext1").classed('hidden',true)
+	  	d3.select("#redtext2").classed('hidden',true)
+	  	d3.select("#red").classed('hidden',true)
+	  })
+
+	  d3.select("#step-two").on('stepin', function(e){
+		d3.select("#orangetext1").classed('hidden',true)
+	  	d3.select("#orangetext2").classed('hidden',true)
+	  	d3.select("#orangetext3").classed('hidden',true)
+	  	d3.select("#orangetext4").classed('hidden',true)
+	  	d3.select("#orangetext5").classed('hidden',true)
+	  	d3.select("#orange").classed('hidden',true)
+		d3.select("#redtext1").classed('hidden',false)
+	  	d3.select("#redtext2").classed('hidden',false)
+	  	d3.select("#red").classed('hidden',false)
+		d3.select("#blue").classed('hidden',true)
+	  	d3.select("#bluetext1").classed('hidden',true)
+	  	d3.select("#bluetext2").classed('hidden',true)
+
+		
+	  })
+
+	  d3.select("#step-three").on('stepin', function(e){
+		d3.select("#redtext1").classed('hidden',true)
+	  	d3.select("#redtext2").classed('hidden',true)
+	  	d3.select("#red").classed('hidden',true)
+		d3.select("#blue").classed('hidden',false)
+	  	d3.select("#bluetext1").classed('hidden',false)
+	  	d3.select("#bluetext2").classed('hidden',false)
+		d3.select("#cream").classed('hidden',true)
+	  	d3.select("#creamtext1").classed('hidden',true)
+	  	d3.select("#creamtext2").classed('hidden',true)
+		d3.select("#orangetext1").classed('hidden',true)
+	  	d3.select("#orangetext2").classed('hidden',true)
+	  	d3.select("#orangetext3").classed('hidden',true)
+	  	d3.select("#orangetext4").classed('hidden',true)
+	  	d3.select("#orangetext5").classed('hidden',true)
+	  	d3.select("#orange").classed('hidden',true)
+
+		
+	
+	  })
+
+	  d3.select("#step-four").on('stepin', function(e){
+
+		d3.select("#orangetext1").classed('hidden',false)
+	  	d3.select("#orangetext2").classed('hidden',false)
+	  	d3.select("#orangetext3").classed('hidden',false)
+	  	d3.select("#orangetext4").classed('hidden',false)
+	  	d3.select("#orangetext5").classed('hidden',false)
+	  	d3.select("#orange").classed('hidden',false)
+		d3.select("#redtext1").classed('hidden',true)
+	  	d3.select("#redtext2").classed('hidden',true)
+	  	d3.select("#red").classed('hidden',true)
+		d3.select("#bluetext1").classed('hidden',true)
+	  	d3.select("#bluetext2").classed('hidden',true)
+		d3.select("#blue").classed('hidden',true)
+		d3.select("#cream").classed('hidden',true)
+	  	d3.select("#creamtext1").classed('hidden',true)
+	  	d3.select("#creamtext2").classed('hidden',true)
+		
+	  })
+
+	  d3.select("#step-five").on('stepin', function(e){
+		d3.select("#blue").classed('hidden',true)
+	  	d3.select("#bluetext1").classed('hidden',true)
+	  	d3.select("#bluetext2").classed('hidden',true)
+		d3.select("#cream").classed('hidden',false)
+	  	d3.select("#creamtext1").classed('hidden',false)
+	  	d3.select("#creamtext2").classed('hidden',false)
+		d3.select("#selection").classed('hidden',true)	
+      	d3.select("#orangetext1").classed('hidden',true)
+	  	d3.select("#orangetext2").classed('hidden',true)
+	  	d3.select("#orangetext3").classed('hidden',true)
+	  	d3.select("#orangetext4").classed('hidden',true)
+	  	d3.select("#orangetext5").classed('hidden',true)
+	  	d3.select("#orange").classed('hidden',true)
+	  })
+	  
+
+    </script>
+
+<script>
+    const scroller = scrollama();
+
+	scroller
+		.setup({
+			step: "#scrolly .scrolly-overlay .step",
+			offset: 0.75,
+			debug: false
+		})
+		.onStepEnter(function({ element, index, direction}) {
+			const event = new CustomEvent('stepin', { detail: { direction: direction } })
+			element.dispatchEvent(event);
+		})
+		.onStepExit(function({ element, index, direction }) {
+			const event = new CustomEvent('stepout', { detail: { direction: direction } })
+			element.dispatchEvent(event);
+		});
+
+	window.addEventListener("resize", scroller.resize);
+    </script>
+
+
+    <!-- ai2html resizer script -->
+
+<script type="text/javascript">
+  (function() {
+      // only want one resizer on the page
+      if (document.documentElement.className.indexOf("g-resizer-v3-init") > -1) return;
+      document.documentElement.className += " g-resizer-v3-init";
+      // require IE9+
+      if (!("querySelector" in document)) return;
+      function resizer() {
+          var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
+              widthById = {};
+          elements.forEach(function(el) {
+              var parent = el.parentNode,
+                  width = widthById[parent.id] || parent.getBoundingClientRect().width,
+                  minwidth = el.getAttribute("data-min-width"),
+                  maxwidth = el.getAttribute("data-max-width");
+              widthById[parent.id] = width;
+
+              if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                  el.style.display = "block";
+              } else {
+                  el.style.display = "none";
+              }
+          });
+          try {
+              if (window.parent && window.parent.$) {
+                  window.parent.$("body").trigger("resizedcontent", [window]);
+              }
+              if (window.require) {
+                  require(['foundation/main'], function() {
+                      require(['shared/interactive/instances/app-communicator'], function(AppCommunicator) {
+                          AppCommunicator.triggerResize();
+                      });
+                  });
+              }
+          } catch(e) { console.log(e); }
+      }
+
+      document.addEventListener('DOMContentLoaded', resizer);
+      // feel free to replace throttle with _.throttle, if available
+      window.addEventListener('resize', throttle(resizer, 200));        
+
+      function throttle(func, wait) {
+          // from underscore.js
+          var _now = Date.now || function() { return new Date().getTime(); },
+              context, args, result, timeout = null, previous = 0;
+          var later = function() {
+              previous = _now();
+              timeout = null;
+              result = func.apply(context, args);
+              if (!timeout) context = args = null;
+          };
+          return function() {
+              var now = _now(), remaining = wait - (now - previous);
+              context = this;
+              args = arguments;
+              if (remaining <= 0 || remaining > wait) {
+                  if (timeout) {
+                      clearTimeout(timeout);
+                      timeout = null;
+                  }
+                  previous = now;
+                  result = func.apply(context, args);
+                  if (!timeout) context = args = null;
+              } else if (!timeout && options.trailing !== false) {
+                  timeout = setTimeout(later, remaining);
+              }
+              return result;
+          };
+      }
+
+     
+  })();
+</script>
+</div>
+  </body>
+</html>
